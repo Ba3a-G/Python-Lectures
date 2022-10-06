@@ -110,3 +110,61 @@ if 4>5:
 else:
     print("It will execute this block.")
 ```
+
+## Loops
+Loops run a block of code repetitively until a stop condtion is reached. There are various types of loops.
+
+_Note: [All loops code snippets](/loops.py)_
+
+### `while` Loop
+It runs until the statament after `while` is `True`.
+
+```python
+i = 2
+while i < 7:
+    i = i + 1
+    print(i) # i will be printed 5 times. That is untill it becomes 6.
+
+while True:
+    print("Hello Ba3a") # Hello Ba3a will be printed indefinitely, until your machine crashes, or untill you press CTRL + C
+```
+
+So, the statement after `while` keyword has to be `True` to run the block, and it will continue to run until it becomes `False`.
+
+Here is the general form of while:
+
+```python
+while some_condition:
+    do this
+```
+
+### `for` Loop
+All `for` loop does is cycle through a list. Let me explain. Suppose there is a list of pets at my home, `pets = [cat, dog, parrot, rabbit]`, I can use `for` loop to print the name of each of my pets.
+
+```python
+pets = ["cat", "dog", "parrot", "rabbit"]
+
+for name in pets:
+    print(name)
+
+# It will print:
+# cat
+# dog
+# parrot
+# rabbit
+```
+
+So. the variable after the keyword `for` takes the value of each element of the list, which is written after the keyword `in`.
+
+The above snippet could also be written like this:
+```python
+for name in ["cat", "dog", "parrot", "rabbit"]:
+    print(name)
+```
+
+The general for of `for` loop would be:
+```python
+for element in list:
+    do something with the element
+```
+

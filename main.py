@@ -1,5 +1,3 @@
-"""a = int(input("number1: "))
-b = int(input("number2: "))
-print(a+b)"""
+import loops
 
-print(type(10))
+loops.print_fruits()
